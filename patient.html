@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Patient Data</title>
+	</head>
+	<body>
+		{% from "_formhelpers.html" import render_field %}
+		<div><B>Enter Patient Details</B></div>
+		<form method=post action="/result">
+			<dl>
+				{{ render_field(form.age) }}
+			</dl>
+			<dl>
+				{{ render_field(form.gender) }}
+			</dl
+			<dl>
+				{{ render_field(form.hypertension) }}
+			</dl>
+			<dl>
+				{{ render_field(form.heart) }}
+			</dl>
+			<dl>
+				{{ render_field(form.married) }}
+			</dl>
+			<dl>
+				{{ render_field(form.work) }}
+			</dl>
+			<dl>
+				{{ render_field(form.residence) }}
+			</dl>
+			<dl>
+				{{ render_field(form.ppbs) }}
+			</dl>
+			<dl>
+				{{ render_field(form.bmi) }}
+			</dl>
+			<dl>
+				{{ render_field(form.smoking) }}
+			</dl>
+		<input type=submit value='Evaluate' name='submit_btn'>
+		</form>
+	</body>
+</html>
